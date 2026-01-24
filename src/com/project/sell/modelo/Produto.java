@@ -17,7 +17,7 @@ public class Produto {
 	}
 	
 	public void AdicionarProdutos(int q) {
-		this.quantidade += q; 
+		quantidade += q; 
 	}
 	
 	public void RemoverProdutos(int q) {
@@ -29,9 +29,4 @@ public class Produto {
 		return 
 			String.format("%s, $ %.2f, %d unidades, Total: $ %.2f",nome, preco, quantidade, ValorTotalEmEstoque()); 
 	}
-
-	/*public void ExibirResultadoAtualizacao() { 
-		System.out.printf("\nDados atualizados: %s, $ %.2f, %d, Total: $ %.2f\n", this.nome, this.preco, this.quantidade, ValorTotalEmEstoque());
-	}*/
-
 }
