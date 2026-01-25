@@ -15,20 +15,20 @@ public class Main {
 		System.out.println("Entre os dados do produto: "); 
 		System.out.print("Nome: "); 
 		String nome = ler.nextLine(); 
-		System.out.print("Preço: "); 
+		/*System.out.print("Preço: "); 
 		double preco = ler.nextDouble(); 
 		System.out.print("Quantidade no estoque: "); 
-		int quantidade = ler.nextInt(); 
+		int quantidade = ler.nextInt(); */
 		System.out.println();
-		
-		Produto p = new Produto(nome, preco, quantidade); 
+			
+		Produto p = new Produto(nome); 
 				
 		//double total = p.ValorTotalEmEstoque(); 
 		//p.ExibirResultadoAtualizacao();
 		System.out.println("Dados do Produto: " +p); 
 				
 		System.out.printf("\nDigite o número de produtos a ser adicionado ao estoque: ");
-		quantidade = ler.nextInt();
+		int quantidade = ler.nextInt();
 		
 		p.AdicionarProdutos(quantidade);
 		//total = p.ValorTotalEmEstoque();
