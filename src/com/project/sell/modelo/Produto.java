@@ -8,8 +8,8 @@ public class Produto {
 	
 	public Produto(String n) {
 		nome = n; 
-		preco = 1000; 
-		quantidade = 200; 
+		preco = 110000.22; 
+		quantidade = 2000; 
 	}
 	
 	public Produto(String n, double p) {
