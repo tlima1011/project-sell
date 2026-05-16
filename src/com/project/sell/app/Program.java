@@ -45,12 +45,13 @@ public class Program {
 				ler.nextLine();
 				products.add(new ImportedProduct(name, price, customsFee));
 			}
-			
 		}
-
 		
+		System.out.println("\nPRICE TAGS:");
+		for (Product product : products) {
+			System.out.println(product.priceTag());
+		}
 		
-
 		ler.close();
 	}
 
