@@ -2,27 +2,58 @@ package com.project.sell.modelo;
 
 public class Produto {
 	
-	public String nome;  
-	public double preco;  
-	public int quantidade; 
+	private String nome;  
+	private double preco;  
+	private int quantidade; 
+	
+	public Produto() {
+		this.quantidade = 2000; 
+		this.preco = 110000.22; 
+	}
 	
 	public Produto(String n) {
+		this(); 
 		nome = n; 
-		preco = 110000.22; 
-		quantidade = 2000; 
 	}
 	
-	public Produto(String n, double p) {
+	public Produto(String n, double p){
 		nome = n; 
 		preco = p; 
-		quantidade = 100; 
+		quantidade = 1000; 
 	}
 	
-	public Produto(String n, double p, int q) {
+	public Produto(String n, double p, int q){
 		this.nome = n; 
-		this.preco = p; 
+		this.preco = setPreco(); 
 		this.quantidade = q; 
 	}
+	
+	public void setPreco(double p) {
+		if(preco < 0.0) {
+			this.preco = 1.0; 
+		}
+		else {
+			this.preco = p; 
+		}
+	}
+	
+	public double setPreco() { 
+		return preco; 
+	}
+	
+	public void setQuantidade(int q) {
+		if(quantidade < 0) {
+			this.quantidade = 0; 
+		}
+		else {
+			this.quantidade = q;
+		}
+	}
+	
+	public int getQuantidade() {
+		return quantidade;
+	}
+	
 	
 	public double ValorTotalEmEstoque() {
 		return preco * quantidade; 
