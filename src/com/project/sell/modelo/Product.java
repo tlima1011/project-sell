@@ -2,20 +2,20 @@ package com.project.sell.modelo;
 
 public class Product {
 	
-	private String Name; 
-	private double Price; 
+	protected String Name; 
+	protected double Price; 
 	
 	public Product() {
 		
 	}
 	
-	public String getName() {
+	/*public String getName() {
 		return Name; 
 	}
 	
 	public double getPrice() {
 		return Price; 
-	}
+	}*/
 	
 	public Product(String name, double price) { 
 		Name = name; 
